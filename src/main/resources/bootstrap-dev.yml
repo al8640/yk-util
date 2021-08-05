@@ -6,9 +6,6 @@ spring:
   redis:
     host: test-redis.techgp.cn
     password: tpMLLnWn6pYIHiuBdTNP
-#    host: 127.0.0.1
-#    password:
-#    database: 1
     port: 6379
     database: 17
 

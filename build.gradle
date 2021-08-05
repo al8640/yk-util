@@ -9,8 +9,8 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
 repositories {
-    maven { url 'http://jfrog.techgp.cn/artifactory/public' }
-    maven { url 'http://jfrog.techgp.cn/artifactory/releases-local' }
+//    maven { url 'http://jfrog.techgp.cn/artifactory/public' }
+//    maven { url 'http://jfrog.techgp.cn/artifactory/releases-local' }
     mavenCentral()
 }
 

@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: yk-util
+  profiles:
+    active: dev
+  jackson:
+    serialization:
+      write-dates-as-timestamps: true
+
+management:
+  endpoint:
+    env:
+      post:
+        enabled: true
+  endpoints:
+    web:
+      base-path: /
+      exposure:
+        include: info, health, env, metrics

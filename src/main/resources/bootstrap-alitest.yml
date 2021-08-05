@@ -1,0 +1,41 @@
+spring:
+  datasource:
+    url: jdbc:mysql://rm-uf698597962480lev.mysql.rds.aliyuncs.com:3306/rjhy_appraisal_biz?characterEncoding=utf8&serverTimezone=GMT%2b8&connectTimeout=5000&socketTimeout=30000
+    username: rjhymysqltest
+    password: 5HovXFLY0gyBANqqrZ2J
+  redis:
+    host: r-uf6umbcpwu07znjze7.redis.rds.aliyuncs.com
+    password: tpMLLnWn6pYIHiuBdTNP
+    port: 6379
+    database: 17
+
+swagger:
+  enable: true
+  host: http://test-gateway.jinyi999.cn/rjhy-appraisal-business
+  title: 考核系统服务文档
+  contackName: 郁宋盛、杨柯
+  contachEmail: songsheng.yu@yintech.cn、ke.yang1@yintech.cn
+  version: 1.0
+#-------------
+
+sms:
+  verify.url: http://go-sms-api:8080/api/1/futures-user/captcha/sms/verify
+
+
+aes:
+  encrypt.key: SfBOnGETLWHEvAIP
+  encrypt.iv: 9116592517136211
+
+
+xxl:
+  job:
+    admin:
+      addresses: http://rjhy-xxl-job:8080/rjhy-xxl-job/
+    accessToken:
+    executor:
+      appname: rjhy-appraisal-business-job
+      address:
+      ip: ${spring.cloud.client.ip-address}
+      port: 9999
+      logpath: ./logs/job
+      logretentiondays: 5

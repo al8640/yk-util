@@ -13,8 +13,8 @@ buildalitest:
   script:
     - chmod +x ./gradlew
     - ./gradlew clean assemble --refresh-dependencies -Denv=alitest
-    - docker build -f src/main/docker/Dockerfile -t registry.cn-shanghai.aliyuncs.com/ytx/$APPNAME:alitest .
-    - docker push registry.cn-shanghai.aliyuncs.com/ytx/$APPNAME:alitest
+    - docker build -f src/main/docker/Dockerfile -t registry.cn-hangzhou.aliyuncs.com/yangke/yangke/$APPNAME:alitest .
+    - docker push registry.cn-hangzhou.aliyuncs.com/yangke/yangke/$APPNAME:alitest
   except:
     - tags
     - dev-*
@@ -26,8 +26,8 @@ buildProd:
   script:
     - chmod +x ./gradlew
     - ./gradlew clean assemble --refresh-dependencies -Denv=production
-    - docker build -f src/main/docker/Dockerfile -t registry.cn-shanghai.aliyuncs.com/ytx/$APPNAME:${CI_COMMIT_TAG} .
-    - docker push registry.cn-shanghai.aliyuncs.com/ytx/$APPNAME:${CI_COMMIT_TAG}
+    - docker build -f src/main/docker/Dockerfile -t registry.cn-hangzhou.aliyuncs.com/yangke/yangke/$APPNAME:${CI_COMMIT_TAG} .
+    - docker push registry.cn-hangzhou.aliyuncs.com/yangke/yangke/$APPNAME:${CI_COMMIT_TAG}
   only:
     - tags
   when: manual

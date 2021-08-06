@@ -6,7 +6,7 @@ stages:
   - buildProd
   - deploy
 
-buildalitest:
+buildDev:
   tags:
     - docker
   stage: buildDev

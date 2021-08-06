@@ -2,19 +2,19 @@ variables:
   APPNAME: "${CI_PROJECT_NAME}"
 
 stages:
-  - buildalitest
+  - buildDev
   - buildProd
   - deploy
 
 buildalitest:
   tags:
     - docker
-  stage: buildalitest
+  stage: buildDev
   script:
     - chmod +x ./gradlew
-    - ./gradlew clean assemble --refresh-dependencies -Denv=alitest
-    - docker build -f src/main/docker/Dockerfile -t registry.cn-hangzhou.aliyuncs.com/yangke/yangke/$APPNAME:alitest .
-    - docker push registry.cn-hangzhou.aliyuncs.com/yangke/yangke/$APPNAME:alitest
+    - ./gradlew clean assemble --refresh-dependencies -Denv=dev
+    - docker build -f src/main/docker/Dockerfile -t registry.cn-hangzhou.aliyuncs.com/yangke/yangke/$APPNAME:dev .
+    - docker push registry.cn-hangzhou.aliyuncs.com/yangke/yangke/$APPNAME:dev
   except:
     - tags
     - dev-*

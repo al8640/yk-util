@@ -4,13 +4,9 @@ plugins {
     id 'java'
 }
 
-//group = 'com.yangke.util'
-//version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
 repositories {
-//    maven { url 'http://jfrog.techgp.cn/artifactory/public' }
-//    maven { url 'http://jfrog.techgp.cn/artifactory/releases-local' }
     mavenCentral()
 }
 
@@ -21,6 +17,8 @@ ext {
 }
 
 dependencies {
+    implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-config'
+    implementation 'com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-discovery'
     implementation 'org.springframework.cloud:spring-cloud-starter'
     implementation 'com.baomidou:mybatis-plus-boot-starter:3.3.2'
     runtimeOnly 'mysql:mysql-connector-java'
@@ -37,12 +35,28 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     compileOnly 'org.springframework:spring-aspects'
 
+    // xxl-job
+    implementation 'com.xuxueli:xxl-job-core:2.2.0'
+    implementation 'org.springframework.cloud:spring-cloud-commons:2.2.4.RELEASE'
+
     implementation 'commons-io:commons-io:2.6'
     implementation 'org.apache.commons:commons-lang3:3.8.1'
     implementation 'commons-collections:commons-collections:3.2.2'
     implementation 'commons-codec:commons-codec:1.11'
     implementation 'com.alibaba:fastjson:1.2.70'
     implementation 'com.google.guava:guava:27.1-jre'
+
+    //rabbitmq
+    implementation 'org.springframework.amqp:spring-rabbit'
+
+    //mongo
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+
+    // swagger
+    implementation 'io.springfox:springfox-swagger2:2.9.2'
+    compile('io.springfox:springfox-swagger-ui:2.9.2'){
+        exclude group: 'io.swagger', module: 'swagger-models'
+    }
 }
 
 dependencyManagement {

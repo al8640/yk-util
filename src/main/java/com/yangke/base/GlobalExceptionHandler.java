@@ -1,4 +1,4 @@
-package com.yangke.util.exception;
+package com.yangke.base;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 /**
  * @author ke.yang1
  * @description
- * @date 2021/8/4 1:37 下午
+ * @date 2022/5/3 10:15 下午
  */
 public class GlobalExceptionHandler {
     private static final Logger log = LoggerFactory.getLogger(GlobalExceptionHandler.class);

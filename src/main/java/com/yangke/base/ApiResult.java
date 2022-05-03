@@ -1,4 +1,4 @@
-package com.yangke.util.exception;
+package com.yangke.base;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -7,21 +7,18 @@ import java.util.Objects;
 /**
  * @author ke.yang1
  * @description
- * @date 2021/8/4 1:49 下午
+ * @date 2022/5/3 10:12 下午
  */
 public class ApiResult<T> {
     private Integer code;
     private String message;
     private T data;
-    private Long total;
-    private Long timestamp;
 
     public static <T> ApiResult<T> ok(T data) {
         ApiResult<T> apiResult = new ApiResult();
         apiResult.setCode(ResultCodeEnum.SUCCESS.code());
         apiResult.setMessage(ResultCodeEnum.SUCCESS.message());
         apiResult.setData(data);
-        apiResult.setTimestamp(System.currentTimeMillis());
         return apiResult;
     }
 
@@ -33,7 +30,6 @@ public class ApiResult<T> {
         ApiResult apiResult = new ApiResult();
         apiResult.setCode(code);
         apiResult.setMessage(msg);
-        apiResult.setTimestamp(System.currentTimeMillis());
         return apiResult;
     }
 
@@ -68,14 +64,6 @@ public class ApiResult<T> {
 
     public void setData(T data) {
         this.data = data;
-    }
-
-    public Long getTimestamp() {
-        return timestamp;
-    }
-
-    public void setTimestamp(Long timestamp) {
-        this.timestamp = timestamp;
     }
 
     public ApiResult() {

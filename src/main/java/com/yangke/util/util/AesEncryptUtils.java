@@ -160,36 +160,10 @@ public class AesEncryptUtils {
     }
 
     public static void main(String[] args) {
-        System.out.println("18601696010");
         System.out.println(AesEncryptUtils.encrypt("17602153155"));
         System.out.println(assemble("18621528899", "SfBOnGETLWHEvAIP", "9116592517136211"));
         System.out.println(disassemble("d926f98568ae5712b350f3f97b1b5d21", "SfBOnGETLWHEvAIP", "9116592517136211"));
-        System.out.println(disassemble("47800e88b82931707f80ced8abb416c3", "SfBOnGETLWHEvAIP", "9116592517136211"));
-        System.out.println(disassemble("5d1b25e6d1ad310f4c8a0530a44e0365", "SfBOnGETLWHEvAIP", "9116592517136211"));
-        System.out.println(disassemble("164f9d2dc34f7d32d1faa6eb18f6aa8e", "SfBOnGETLWHEvAIP", "9116592517136211"));
-        System.out.println(disassemble("f4d6cef7f03d0dadd43458f7ba07eec1", "SfBOnGETLWHEvAIP", "9116592517136211"));
-        System.out.println(disassemble("400e955953be5b18e00cf4f75958d5f4", "SfBOnGETLWHEvAIP", "9116592517136211"));
-
-        System.out.println("-----------");
-        System.out.println(disassemble("f29e09548866c22c3cae3bf211abe49f", "SfBOnGETLWHEvAIP", "9116592517136211"));
-        System.out.println(disassemble("07181540a2cc2df054b609376e428f95", "SfBOnGETLWHEvAIP", "9116592517136211"));
-        System.out.println(disassemble("2e117a428875d8daf80ea435f198acfc", "SfBOnGETLWHEvAIP", "9116592517136211"));
-        System.out.println(disassemble("47800e88b82931707f80ced8abb416c3", "SfBOnGETLWHEvAIP", "9116592517136211"));
-        System.out.println(disassemble("4afce0a9430f085daab9b0008fc54cfe", "SfBOnGETLWHEvAIP", "9116592517136211"));
-        System.out.println(disassemble("f29e09548866c22c3cae3bf211abe49f", "SfBOnGETLWHEvAIP", "9116592517136211"));
-        System.out.println(disassemble("73c6977474d57629aee7d2c54fdda518", "SfBOnGETLWHEvAIP", "9116592517136211"));
-        System.out.println(disassemble("e704d2d2e33aa07e64b5b4e8c558b295", "SfBOnGETLWHEvAIP", "9116592517136211"));
-        System.out.println(disassemble("8ad94ed5593752cb84fbd6c8ea7fffe9", "SfBOnGETLWHEvAIP", "9116592517136211"));
         System.out.println(AesEncryptUtils.decrypt("e6a98a2d50099e10e498fab1643b3b87"));
-
-        System.out.println(disassemble("8ad94ed5593752cb84fbd6c8ea7fffe9", "SfBOnGETLWHEvAIP", "9116592517136211"));
-        System.out.println(disassemble("2e83d9edba14c742a2bb75fa24c21803", "SfBOnGETLWHEvAIP", "9116592517136211"));
-
-
-
-        System.out.println(assemble("18201786204", "SfBOnGETLWHEvAIP", "9116592517136211"));
-        System.out.println(assemble("13072124351", "SfBOnGETLWHEvAIP", "9116592517136211"));
-        System.out.println(assemble("15214368737", "SfBOnGETLWHEvAIP", "9116592517136211"));
 
     }
 }

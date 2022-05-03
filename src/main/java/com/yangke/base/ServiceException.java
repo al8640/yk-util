@@ -1,11 +1,13 @@
-package com.yangke.util.exception;
+package com.yangke.base;
+
+import com.yangke.base.ResultCodeEnum;
 
 /**
  * @author ke.yang1
  * @description
- * @date 2021/8/4 1:51 下午
+ * @date 2022/5/3 10:13 下午
  */
-public class ServiceException extends RuntimeException{
+public class ServiceException extends RuntimeException {
     private int code = 0;
 
     public ServiceException() {

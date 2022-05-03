@@ -1,9 +1,9 @@
-package com.yangke.util.exception;
+package com.yangke.base;
 
 /**
  * @author ke.yang1
  * @description
- * @date 2021/8/4 1:50 下午
+ * @date 2022/5/3 10:14 下午
  */
 public enum ResultCodeEnum {
     SUCCESS(1, "SUCCESS"),

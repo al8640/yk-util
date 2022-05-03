@@ -1,6 +1,4 @@
 spring:
-  data:
-    mongodb:
   cloud:
     nacos:
       config:
@@ -14,6 +12,6 @@ spring:
       discovery:
         namespace: d1f19b20-f158-44e7-853c-350a7aeac748
         username: register
-        password: register123456
+        password: config123456
         cluster-name: yk-util
-      server-addr: 1.116.41.30:8848
+      server-addr: 1.116.41.30:8081

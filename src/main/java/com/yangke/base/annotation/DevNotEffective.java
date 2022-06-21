@@ -9,7 +9,7 @@ import java.lang.annotation.*;
  * @description
  * @date 2022/6/14 5:44 下午
  */
-@ConditionalOnExpression("'alitest'.equals('${spring.profiles.env}' || 'prod'.equals('${spring.profiles.env}'))")
+@ConditionalOnExpression("'alitest'.equals('${spring.profiles.env}') || 'prod'.equals('${spring.profiles.env}')")
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented

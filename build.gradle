@@ -40,7 +40,7 @@ dependencies {
     // lombok
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
-    compileOnly 'org.springframework:spring-aspects'
+    implementation 'org.springframework:spring-aspects'
 
     // xxl-job
     implementation 'com.xuxueli:xxl-job-core:2.2.0'

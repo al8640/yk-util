@@ -7,9 +7,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 /**
  * 线程池配置
- *
- * @author
- *
+ * @author ke.yang1
  */
 @Configuration
 public class ExecutePoolConfiguration {

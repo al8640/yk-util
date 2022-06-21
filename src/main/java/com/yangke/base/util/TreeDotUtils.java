@@ -1,4 +1,4 @@
-package com.yangke.util;
+package com.yangke.base.util;
 
 import java.util.ArrayList;
 import java.util.HashSet;

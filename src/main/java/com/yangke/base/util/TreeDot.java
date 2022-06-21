@@ -1,4 +1,4 @@
-package com.yangke.util;
+package com.yangke.base.util;
 
 import lombok.Data;
 

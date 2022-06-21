@@ -1,4 +1,4 @@
-package com.yangke.util;
+package com.yangke.base.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

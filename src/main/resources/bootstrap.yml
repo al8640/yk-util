@@ -1,3 +1,4 @@
+
 spring:
   application:
     name: yk-util
@@ -17,3 +18,5 @@ management:
       base-path: /
       exposure:
         include: info, health, env, metrics
+server:
+  port: 9045

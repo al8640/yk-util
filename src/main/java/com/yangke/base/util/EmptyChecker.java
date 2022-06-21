@@ -1,4 +1,4 @@
-package com.yangke.util;
+package com.yangke.base.util;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

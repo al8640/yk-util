@@ -1,4 +1,4 @@
-package com.yangke.base.utils.callback;
+package com.yangke.base.util;
 
 import com.yangke.base.util.AesEnum;
 import lombok.extern.slf4j.Slf4j;

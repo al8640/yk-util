@@ -1,4 +1,4 @@
-package com.yangke.base.utils.callback;
+package com.yangke.base.utils.callback.example.example2;
 
 /**
  * @author ke.yang1
